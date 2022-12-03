@@ -17,7 +17,6 @@ C60 ,1,1-20p,My_Library:C_Trim_THD_L7.0mm_W6.5mm_P5.00mm
 C61 C64 ,2,150p,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 C62 C63 C67 C68 C72 C73 C77 C78 ,8,1-30p,My_Library:C_Trim_THD_L7.0mm_W6.5mm_P5.00mm
 C65 C70 C75 ,3,1-10p,My_Library:C_Trim_THD_L7.0mm_W6.5mm_P5.00mm
-C6 C7 ,2,DNP,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 C71 C74 ,2,47p,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 C76 C79 ,2,68p,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 D1 D2 D3 D6 D7 D8 D9 D10 D11 D12 D13 ,11,1N4148W,Diode_SMD:D_SOD-123
