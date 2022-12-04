@@ -23,7 +23,7 @@ D1 D2 D3 D6 D7 D8 D9 D10 D11 D12 D13 ,11,1N4148W,Diode_SMD:D_SOD-123
 D14 ,1,SS14,Diode_SMD:D_SMA_Handsoldering
 D4 D5 ,2,1N34 / D311,Diode_THT:D_DO-41_SOD81_P3.81mm_Vertical_AnodeUp
 J2 ,1,Si5351_Module,Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical
-"J3, J4",1,Blue Pill,
+J3 J4,1,Blue Pill,
 K1 K2 K3 K4 K5 K6 K7 K8 K9 ,9,G6K-2F-Y,Relay_SMD:Relay_DPDT_Omron_G6K-2F-Y
 L1 L2 ,2,1000u,Inductor_THT:L_Axial_L6.6mm_D2.7mm_P10.16mm_Horizontal_Vishay_IM-2
 Q1 Q5 Q7 Q8 Q9 Q10 Q11 ,7,MMBT3904,Package_TO_SOT_SMD:SOT-23
@@ -65,3 +65,5 @@ U2 ,1,24LC64,Package_SO:SO-8_5.3x6.2mm_P1.27mm
 U3 U6 U7 U8 U9 ,5,NE5532,Package_SO:SOIC-8_5.23x5.23mm_P1.27mm
 U4 ,1,FST3253,Package_SO:TSSOP-16_4.4x5mm_P0.65mm
 U5 ,1,74AC74,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm
+J8 J9 J11 J12,1,BN61-202,
+J6,2,220u,"Through-hole capacitors, ideally 8 mm diameter"
