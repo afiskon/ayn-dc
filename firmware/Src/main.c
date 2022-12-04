@@ -470,7 +470,7 @@ void displayVoltageOrMode(bool force) {
     uint32_t tstamp = HAL_GetTick();
     if(force || (tstamp - lastVoltageUpdateTime > 1000)) {
         double voltage = ADC_ReadVoltage(ADC_CHANNEL_2);
-        voltage = voltage * 6.8;
+        voltage = voltage * 6.7;
 
         if(force || (abs((int)(voltage*100) - (int)(prevVoltage*100)) >= 15)) {
             // Don't re-render if we are about to transmit
