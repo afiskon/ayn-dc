@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=/Users/eax/projects/sandbox/stm32/ayn-dc-firmware/Inc
+HeaderPath=/Users/eax/projects/other/ayn-dc/firmware/Inc
 HeaderFiles=stm32f1xx_it.h;stm32f1xx_hal_conf.h;main.h;
-SourcePath=/Users/eax/projects/sandbox/stm32/ayn-dc-firmware/Src
+SourcePath=/Users/eax/projects/other/ayn-dc/firmware/Src
 SourceFiles=stm32f1xx_it.c;stm32f1xx_hal_msp.c;main.c;
 
 [PreviousLibFiles]
