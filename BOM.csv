@@ -21,10 +21,10 @@ C71 C74 ,2,47p,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 C76 C79 ,2,68p,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 D1 D2 D3 D6 D7 D8 D9 D10 D11 D12 D13 ,11,1N4148W,Diode_SMD:D_SOD-123
 D14 ,1,SS14,Diode_SMD:D_SMA_Handsoldering
-D4 D5 ,2,1N34 / D311,Diode_THT:D_DO-41_SOD81_P3.81mm_Vertical_AnodeUp
+D4 D5 ,2,1N34 / D311 / etc,Diode_THT:D_DO-41_SOD81_P3.81mm_Vertical_AnodeUp
 J2 ,1,Si5351_Module,Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical
 J3 J4,1,Blue Pill,
-K1 K2 K3 K4 K5 K6 K7 K8 K9 ,9,G6K-2F-Y,Relay_SMD:Relay_DPDT_Omron_G6K-2F-Y
+K1 K2 K3 K4 K5 K6 K7 K8 K9 ,9,G6K-2F-Y or HFD4/12S,Relay_SMD:Relay_DPDT_Omron_G6K-2F-Y
 L1 L2 ,2,1000u,Inductor_THT:L_Axial_L6.6mm_D2.7mm_P10.16mm_Horizontal_Vishay_IM-2
 Q1 Q5 Q7 Q8 Q9 Q10 Q11 ,7,MMBT3904,Package_TO_SOT_SMD:SOT-23
 Q2 Q3 ,2,MMBF170,Package_TO_SOT_SMD:SOT-23
