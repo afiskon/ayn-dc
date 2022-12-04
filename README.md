@@ -11,5 +11,5 @@ QRP CW Transceiver
 * Keyer settings are saved in EEPROM
 * ~5W class C power amplifier
 * Has a VCC indicator and a SWR meter
-* Two-layer PCB designed to fit into Hammond 1590BB enclosure
+* PCB is designed to fit into Hammond 1590BB enclosure
 * The project is 100% open-source
