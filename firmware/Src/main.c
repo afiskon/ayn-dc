@@ -392,8 +392,19 @@ void changeFrequency(int32_t delta, bool force) {
     }
 
     Fvfo = bands[currentBand].lastFreq - CW_PITCH;
-    if(clarMode == CLAR_MODE_RIT) {
+
+    if((clarMode == CLAR_MODE_RIT) && (clarOffset != 0)) {
         Fvfo += clarOffset;
+    } else {
+        // There can be a few spurious signals in this rig.
+        // They can be masked like this if necessary:
+
+        /*
+        if((bands[currentBand].lastFreq == 18069400) ||
+           (bands[currentBand].lastFreq == 18092100)) {
+            Fvfo += 50;
+        }
+        */
     }
 
     Fvfo *= 4;
