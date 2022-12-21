@@ -4,12 +4,12 @@ C2 ,1,470u,Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical
 C23 C31 C46 ,3,0.047u,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 C26 C27 C36 ,3,1000p,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 C29 C66 C69 ,3,100p,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder
-C3 C24 ,2,0.47u,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder
+C3 C6 C24 ,3,0.47u,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 C32 C40 ,2,0.033u,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 C33 C38 C39 ,3,2200p,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 C34 ,1,4.7u,Capacitor_SMD:CP_Elec_4x5.4
 C35 C47 ,2,10u,Capacitor_SMD:CP_Elec_4x5.4
-C1 C4 C5 C8 C9 C10 C11 C12 C14 C15 C16 C17 C19 C20 C22 C25 C28 C30 C37 C42 C43 C44 C49 C50 C51 C53 C54 C55 C56 C57 ,30,0.1u,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder
+C1 C4 C5 C7 C8 C9 C10 C11 C12 C14 C15 C16 C17 C19 C20 C22 C25 C28 C30 C37 C42 C43 C44 C49 C50 C51 C53 C54 C55 C56 C57 ,31,0.1u,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 C41 ,1,6800p,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 C48 ,1,1u,Capacitor_SMD:CP_Elec_4x5.4
 C52 ,1,220u,Capacitor_SMD:CP_Elec_8x10.5
@@ -22,9 +22,9 @@ C76 C79 ,2,68p,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 D1 D2 D3 D6 D7 D8 D9 D10 D11 D12 D13 ,11,1N4148W,Diode_SMD:D_SOD-123
 D14 ,1,SS14,Diode_SMD:D_SMA_Handsoldering
 D4 D5 ,2,1N34 / D311 / etc,Diode_THT:D_DO-41_SOD81_P3.81mm_Vertical_AnodeUp
-J2 ,1,Si5351_Module,Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical
-J3 J4,1,Blue Pill,
-K1 K2 K3 K4 K5 K6 K7 K8 K9 ,9,G6K-2F-Y or HFD4/12S,Relay_SMD:Relay_DPDT_Omron_G6K-2F-Y
+J2 ,1,Si5351 Module,Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical
+"J3, J4 ",1,Blue Pill,
+K1 K2 K3 K4 K5 K6 K7 K8 K9 ,9,G6K-2F-Y or HFD4/12-S,Relay_SMD:Relay_DPDT_Omron_G6K-2F-Y
 L1 L2 ,2,1000u,Inductor_THT:L_Axial_L6.6mm_D2.7mm_P10.16mm_Horizontal_Vishay_IM-2
 Q1 Q5 Q7 Q8 Q9 Q10 Q11 ,7,MMBT3904,Package_TO_SOT_SMD:SOT-23
 Q2 Q3 ,2,MMBF170,Package_TO_SOT_SMD:SOT-23
@@ -33,6 +33,7 @@ Q6 ,1,RD15HVF1,Package_TO_SOT_THT:TO-220-3_Vertical
 R1 R41 ,2,15K,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 R7 R8 R10 R13 ,4,300,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 R19 R40 ,2,8.2K,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder
+R2 R15 R16 R54 R66 R67 R68 R69 ,8,4.7K,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 R20 R28 R53 R59 R71 R72 ,6,1K,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 R21 R22 R23 R24 R29 R30 R31 R32 R57 ,9,3.3K,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 R26 ,1,5.1K,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder
@@ -40,7 +41,6 @@ R27 ,1,4.3K,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 R3 ,1,2.7K,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 R35 R36 ,2,33K,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 R37 R38 ,2,47K,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder
-R2 R4 R5 R15 R16 R54 R66 R67 R68 R69 ,10,4.7K,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 R45 ,1,750K,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 R46 R47 ,2,36K,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 R50 ,1,10,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder
@@ -61,6 +61,7 @@ T1 T2 T3 ,3,FT37-43,Package_DIP:DIP-4_W7.62mm
 T4 T5 T6 T7 T8 T9 T10 T11 ,8,T37-6,Package_DIP:DIP-4_W7.62mm
 U1 ,1,L7805,Package_TO_SOT_THT:TO-220-3_Vertical
 U10 ,1,LM386,Package_SO:SO-8_5.3x6.2mm_P1.27mm
+U11 ,1,L7805,Package_TO_SOT_SMD:TO-263-2
 U2 ,1,24LC64,Package_SO:SO-8_5.3x6.2mm_P1.27mm
 U3 U6 U7 U8 U9 ,5,NE5532,Package_SO:SOIC-8_5.23x5.23mm_P1.27mm
 U4 ,1,FST3253,Package_SO:TSSOP-16_4.4x5mm_P0.65mm
