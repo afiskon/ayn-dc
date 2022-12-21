@@ -969,7 +969,7 @@ void init() {
     LCD_Goto(0, 0);
     LCD_SendString(" AYN/DC ");
     LCD_Goto(1, 0);
-    LCD_SendString("Nov 2022");
+    LCD_SendString("Dec 2022");
     HAL_Delay(1000);
     LCD_Clear();
 
