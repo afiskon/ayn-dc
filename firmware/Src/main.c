@@ -627,7 +627,7 @@ ButtonStatus_t buttonFastPressed() {
 }
 
 ButtonStatus_t buttonLockPressed() {
-    return false; // TODO FIXME assign another pin
+    return BUTTON_STATUS_RELEASED; // TODO FIXME assign another pin
 
     //static uint32_t lastPressed = 0;
     //return buttonPressed(GPIOB, GPIO_PIN_10, &lastPressed);
