@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 11
 Title "AYN/DC by R2AUK ::: https://eax.me/ayn-dc-transceiver/"
-Date "2022-12-03"
-Rev "2"
+Date "2022-12-21"
+Rev "3"
 Comp ""
 Comment1 ""
 Comment2 ""
