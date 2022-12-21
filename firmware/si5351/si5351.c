@@ -6,7 +6,7 @@
 
 // change if necessary
 #define SI5351_ADDRESS 0x60
-#define I2C_HANDLE hi2c1
+#define I2C_HANDLE hi2c2
 extern I2C_HandleTypeDef I2C_HANDLE;
 
 // Private procedures.

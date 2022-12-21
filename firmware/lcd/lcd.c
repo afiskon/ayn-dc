@@ -5,7 +5,8 @@
 #include <lcd.h>
 
 // change if necessary
-#define I2C_HANDLE hi2c1
+#define I2C_HANDLE hi2c2
+
 extern I2C_HandleTypeDef I2C_HANDLE;
 
 #define PIN_RS    (1 << 0)
