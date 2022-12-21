@@ -292,12 +292,25 @@ uint32_t jenkinsHash(const uint8_t *data, const size_t len) {
 void loadKeyerConfig() {
     HAL_StatusTypeDef status;
     uint16_t savedChecksum;
+    uint32_t attempt = 0;
     KeyerConfig_t savedKeyerConfig;
 
     for(;;) {
         status = HAL_I2C_IsDeviceReady(&hi2c1, eeprom_i2c_addr, 3, HAL_MAX_DELAY);
         if(status == HAL_OK)
             break;
+
+        attempt++;
+        if(attempt == 10)
+        {
+            LCD_Goto(0, 0);
+            LCD_SendString(" EEPROM ");
+            LCD_Goto(1, 0);
+            LCD_SendString(" ERROR! ");
+            HAL_Delay(2000);
+            LCD_Clear();
+            return;
+        }
     }
 
     HAL_I2C_Mem_Read(&hi2c1, eeprom_i2c_addr, KEYER_CONFIG_EEPROM_ADDR, I2C_MEMADD_SIZE_16BIT,
