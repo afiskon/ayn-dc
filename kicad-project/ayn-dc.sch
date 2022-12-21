@@ -134,17 +134,6 @@ F 3 "~" H 4550 4750 50  0001 C CNN
 	1    4550 4750
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x20 J4
-U 1 1 636675DE
-P 5100 4750
-F 0 "J4" H 5100 5900 50  0000 C CNN
-F 1 "BluePill_Right" H 5100 5800 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x20_P2.54mm_Vertical" H 5100 4750 50  0001 C CNN
-F 3 "~" H 5100 4750 50  0001 C CNN
-	1    5100 4750
-	-1   0    0    -1  
-$EndComp
 Text GLabel 4250 4050 0    50   Input ~ 0
 BAND_BTN_B14
 Wire Wire Line
@@ -169,136 +158,10 @@ Wire Wire Line
 	4250 4850 4350 4850
 Wire Wire Line
 	4350 4750 4250 4750
-Text GLabel 4250 5350 0    50   BiDi ~ 0
+Text GLabel 5450 4350 2    50   BiDi ~ 0
 I2C_SCL
-Text GLabel 4250 5450 0    50   BiDi ~ 0
+Text GLabel 5450 4250 2    50   BiDi ~ 0
 I2C_SDA
-Text Notes 3550 5900 0    50   ~ 0
-SCL: B8, SDA: B9\nBoth pins are \n5V-tolerant
-Wire Wire Line
-	4350 5350 4250 5350
-Wire Wire Line
-	4350 5450 4250 5450
-Text GLabel 2050 5700 0    50   BiDi ~ 0
-I2C_SCL
-Text GLabel 1250 5700 0    50   BiDi ~ 0
-I2C_SDA
-$Comp
-L power:GND #PWR025
-U 1 1 6366FED8
-P 1450 6200
-F 0 "#PWR025" H 1450 5950 50  0001 C CNN
-F 1 "GND" H 1455 6027 50  0001 C CNN
-F 2 "" H 1450 6200 50  0001 C CNN
-F 3 "" H 1450 6200 50  0001 C CNN
-	1    1450 6200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR026
-U 1 1 63670555
-P 2200 6200
-F 0 "#PWR026" H 2200 5950 50  0001 C CNN
-F 1 "GND" H 2205 6027 50  0001 C CNN
-F 2 "" H 2200 6200 50  0001 C CNN
-F 3 "" H 2200 6200 50  0001 C CNN
-	1    2200 6200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C7
-U 1 1 636708C6
-P 2200 5950
-F 0 "C7" H 2315 5996 50  0000 L CNN
-F 1 "DNP" H 2315 5905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2238 5800 50  0001 C CNN
-F 3 "~" H 2200 5950 50  0001 C CNN
-	1    2200 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C6
-U 1 1 63671336
-P 1450 5950
-F 0 "C6" H 1565 5996 50  0000 L CNN
-F 1 "DNP" H 1565 5905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1488 5800 50  0001 C CNN
-F 3 "~" H 1450 5950 50  0001 C CNN
-	1    1450 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 63681645
-P 1450 5400
-AR Path="/6376AB9B/63681645" Ref="R?"  Part="1" 
-AR Path="/63681645" Ref="R4"  Part="1" 
-F 0 "R4" H 1520 5446 50  0000 L CNN
-F 1 "4.7K" H 1520 5355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1380 5400 50  0001 C CNN
-F 3 "~" H 1450 5400 50  0001 C CNN
-	1    1450 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 63681782
-P 2200 5400
-AR Path="/6376AB9B/63681782" Ref="R?"  Part="1" 
-AR Path="/63681782" Ref="R5"  Part="1" 
-F 0 "R5" H 2270 5446 50  0000 L CNN
-F 1 "4.7K" H 2270 5355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2130 5400 50  0001 C CNN
-F 3 "~" H 2200 5400 50  0001 C CNN
-	1    2200 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR019
-U 1 1 63682542
-P 1450 5150
-F 0 "#PWR019" H 1450 5000 50  0001 C CNN
-F 1 "+5V" H 1465 5323 50  0000 C CNN
-F 2 "" H 1450 5150 50  0001 C CNN
-F 3 "" H 1450 5150 50  0001 C CNN
-	1    1450 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR020
-U 1 1 63682DDC
-P 2200 5150
-F 0 "#PWR020" H 2200 5000 50  0001 C CNN
-F 1 "+5V" H 2215 5323 50  0000 C CNN
-F 2 "" H 2200 5150 50  0001 C CNN
-F 3 "" H 2200 5150 50  0001 C CNN
-	1    2200 5150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1450 5800 1450 5700
-Wire Wire Line
-	1450 5250 1450 5150
-Wire Wire Line
-	1450 6200 1450 6100
-Wire Wire Line
-	2200 5800 2200 5700
-Wire Wire Line
-	2200 5250 2200 5150
-Wire Wire Line
-	2200 6200 2200 6100
-Wire Wire Line
-	2050 5700 2200 5700
-Connection ~ 2200 5700
-Wire Wire Line
-	2200 5700 2200 5550
-Wire Wire Line
-	1250 5700 1450 5700
-Connection ~ 1450 5700
-Wire Wire Line
-	1450 5700 1450 5550
-Text Notes 1150 6700 0    50   ~ 0
-^ These components are optional.\nThe Si5351 module already has built-in\npull-up resistors for the I2C bus.
 NoConn ~ 4350 5750
 $Comp
 L power:GND #PWR027
@@ -315,26 +178,10 @@ Wire Wire Line
 	4250 5800 4250 5650
 Wire Wire Line
 	4250 5650 4350 5650
-$Comp
-L power:+5V #PWR024
-U 1 1 63688B62
-P 3650 5500
-F 0 "#PWR024" H 3650 5350 50  0001 C CNN
-F 1 "+5V" H 3665 5673 50  0000 C CNN
-F 2 "" H 3650 5500 50  0001 C CNN
-F 3 "" H 3650 5500 50  0001 C CNN
-	1    3650 5500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 5500 3650 5550
-Wire Wire Line
-	3650 5550 4350 5550
 NoConn ~ 5300 4050
 NoConn ~ 5300 4150
 NoConn ~ 5300 5750
 NoConn ~ 5300 5650
-NoConn ~ 5300 4550
 NoConn ~ 5300 5450
 NoConn ~ 5300 5050
 NoConn ~ 5300 4950
@@ -347,10 +194,8 @@ Text GLabel 5400 4450 2    50   Input ~ 0
 CLAR_BTN_B1
 Wire Wire Line
 	5400 4450 5300 4450
-Text GLabel 5400 4350 2    50   Input ~ 0
-LOCK_BTN_B10
-Wire Wire Line
-	5400 4350 5300 4350
+Text GLabel 4250 4450 0    50   Input ~ 0
+LOCK_BTN_A10
 $Comp
 L Memory_EEPROM:24LC64 U2
 U 1 1 6368F8B5
@@ -362,19 +207,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21189f.pdf" H 7150 5200 50 
 	1    7150 5200
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR014
-U 1 1 636911E1
-P 7150 4750
-F 0 "#PWR014" H 7150 4600 50  0001 C CNN
-F 1 "+5V" H 7165 4923 50  0000 C CNN
-F 2 "" H 7150 4750 50  0001 C CNN
-F 3 "" H 7150 4750 50  0001 C CNN
-	1    7150 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 4900 7150 4750
 $Comp
 L power:GND #PWR023
 U 1 1 63691C62
@@ -422,61 +254,31 @@ Wire Wire Line
 Wire Wire Line
 	7650 5300 7550 5300
 $Comp
-L Connector_Generic:Conn_01x07 J2
-U 1 1 636982D7
-P 8550 5200
-F 0 "J2" H 8468 5717 50  0000 C CNN
-F 1 "Si5351_Module" H 8468 5626 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical" H 8550 5200 50  0001 C CNN
-F 3 "~" H 8550 5200 50  0001 C CNN
-	1    8550 5200
-	-1   0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR016
 U 1 1 63699B39
-P 8900 5000
-F 0 "#PWR016" H 8900 4750 50  0001 C CNN
-F 1 "GND" H 8905 4827 50  0001 C CNN
-F 2 "" H 8900 5000 50  0001 C CNN
-F 3 "" H 8900 5000 50  0001 C CNN
-	1    8900 5000
+P 8750 5000
+F 0 "#PWR016" H 8750 4750 50  0001 C CNN
+F 1 "GND" H 8755 4827 50  0001 C CNN
+F 2 "" H 8750 5000 50  0001 C CNN
+F 3 "" H 8750 5000 50  0001 C CNN
+	1    8750 5000
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:+5V #PWR015
-U 1 1 6369A2D5
-P 8950 4750
-F 0 "#PWR015" H 8950 4600 50  0001 C CNN
-F 1 "+5V" H 8965 4923 50  0000 C CNN
-F 2 "" H 8950 4750 50  0001 C CNN
-F 3 "" H 8950 4750 50  0001 C CNN
-	1    8950 4750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	8750 4900 8950 4900
-Wire Wire Line
-	8950 4900 8950 4750
-Wire Wire Line
-	8750 5000 8900 5000
-Wire Wire Line
-	8850 5100 8750 5100
-Wire Wire Line
-	8750 5200 8850 5200
-NoConn ~ 8750 5400
-Text GLabel 8850 5300 2    50   Output ~ 0
+	8600 5000 8750 5000
+NoConn ~ 8600 5400
+Text GLabel 8700 5300 2    50   Output ~ 0
 SI5351_CH2
 Wire Wire Line
-	8850 5300 8750 5300
-Text GLabel 8850 5500 2    50   Output ~ 0
+	8700 5300 8600 5300
+Text GLabel 8700 5500 2    50   Output ~ 0
 SI5351_CH0
 Wire Wire Line
-	8850 5500 8750 5500
-Text Notes 8500 5900 0    50   ~ 0
+	8700 5500 8600 5500
+Text Notes 8350 5900 0    50   ~ 0
 CH0: CW\nCH1: Calibration\nCH2: LO x 4
-Text Notes 4700 1850 0    50   ~ 0
-IMPORTANT: The Si5351 module is placed on the PCB but\nshould be connected to the I2C bus with a pair of wires!!!\n\n== EXTERNAL COMPONENTS ==\n- 0802 I2C LCD: connect to 5V, GND and to the I2C bus\n- “VOL” 10K pot, connec to to J5\n- “EAR” socket: connect to J6 through 220u capacitors\n- “KEY” socket: connect to KEY_DIT_B12, KEY_DAH_B13\n- “FREQ” and “CLAR” rotary encoders\n- “LOCK”, “FAST”, “BAND”, “KEYER”, “CLAR” buttons\n- ON/OFF switch\n- DC socket\n- Antenna connector\n\nFor more details see the schematic.
+Text Notes 4700 1650 0    50   ~ 0
+== EXTERNAL COMPONENTS ==\n- 0802 I2C LCD: connect to 5V_DIGITAL, GND and to the I2C bus\n- “VOL” 10K pot, connec to to J5\n- “EAR” socket: connect to J6 through 220u capacitors\n- “KEY” socket: connect to KEY_DIT_B12, KEY_DAH_B13\n- “FREQ” and “CLAR” rotary encoders\n- “LOCK”, “FAST”, “BAND”, “KEYER”, “CLAR” buttons\n- ON/OFF switch\n- DC socket\n- Antenna connector\n\nFor more details see the schematic.
 $Comp
 L power:+12V #PWR04
 U 1 1 637ABF18
@@ -710,10 +512,8 @@ U 63701EE5
 F0 "Power Amplifier" 50
 F1 "power-amplifier.sch" 50
 $EndSheet
-Text GLabel 5400 4250 2    50   Output ~ 0
+Text GLabel 5400 4550 2    50   Output ~ 0
 ENABLE_CW_TONE
-Wire Wire Line
-	5400 4250 5300 4250
 Text GLabel 4250 4650 0    50   Output ~ 0
 ENABLE_TX
 Text GLabel 5400 4750 2    50   Output ~ 0
@@ -783,7 +583,6 @@ Wire Wire Line
 Wire Wire Line
 	4250 4650 4350 4650
 NoConn ~ 5300 5550
-NoConn ~ 4350 4450
 NoConn ~ 4350 4550
 Text GLabel 4250 4950 0    50   Output ~ 0
 CTL17
@@ -1031,7 +830,7 @@ CLAR_BTN_B1
 Wire Wire Line
 	9000 1200 9100 1200
 Text GLabel 9000 800  0    50   Input ~ 0
-LOCK_BTN_B10
+LOCK_BTN_A10
 Wire Wire Line
 	9000 800  9100 800 
 NoConn ~ 9100 800 
@@ -1094,11 +893,164 @@ Wire Wire Line
 Wire Wire Line
 	3750 3000 3350 3000
 Text Notes 4200 3200 0    50   ~ 0
-<- Reverse polarity protection.\nUse with an external fuse.\n\nAlso consider soldering the diode\non the DC jack instead so it would\nbe easier to replace if necessary.
+<- Reverse polarity protection.\nUse with an external fuse.\n\nAlso consider soldering the diode\nto the DC jack instead so it would\nbe easier to replace if necessary.
 Wire Wire Line
 	3350 3000 3350 3250
-Text Notes 8500 6350 0    50   ~ 0
-PIN3: SDA, PIN4: SCL\nThese pins should be connected\nto the I2C bus with a pair of wires!
-NoConn ~ 8850 5100
-NoConn ~ 8850 5200
+Wire Wire Line
+	5450 4250 5300 4250
+Wire Wire Line
+	5300 4350 5450 4350
+NoConn ~ 4350 5450
+NoConn ~ 4350 5350
+$Comp
+L Connector_Generic:Conn_01x07 J2
+U 1 1 636982D7
+P 8400 5200
+F 0 "J2" H 8318 5717 50  0000 C CNN
+F 1 "Si5351_Module" H 8318 5626 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical" H 8400 5200 50  0001 C CNN
+F 3 "~" H 8400 5200 50  0001 C CNN
+	1    8400 5200
+	-1   0    0    -1  
+$EndComp
+Text GLabel 4200 5550 0    50   Input ~ 0
+5V_DIGITAL
+Wire Wire Line
+	4200 5550 4350 5550
+Text GLabel 7050 4700 0    50   Input ~ 0
+5V_DIGITAL
+Wire Wire Line
+	7050 4700 7150 4700
+Wire Wire Line
+	7150 4700 7150 4900
+$Comp
+L Connector_Generic:Conn_01x20 J4
+U 1 1 636675DE
+P 5100 4750
+F 0 "J4" H 5100 5900 50  0000 C CNN
+F 1 "BluePill_Right" H 5100 5800 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x20_P2.54mm_Vertical" H 5100 4750 50  0001 C CNN
+F 3 "~" H 5100 4750 50  0001 C CNN
+	1    5100 4750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4550 5300 4550
+Wire Wire Line
+	4250 4450 4350 4450
+$Comp
+L Regulator_Linear:L7805 U11
+U 1 1 63A91EFA
+P 2800 6850
+F 0 "U11" H 2800 7092 50  0000 C CNN
+F 1 "L7805" H 2800 7001 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 2825 6700 50  0001 L CIN
+F 3 "" H 2800 6800 50  0001 C CNN
+	1    2800 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 63A92D3B
+P 2250 7450
+F 0 "#PWR015" H 2250 7200 50  0001 C CNN
+F 1 "GND" H 2255 7277 50  0001 C CNN
+F 2 "" H 2250 7450 50  0001 C CNN
+F 3 "" H 2250 7450 50  0001 C CNN
+	1    2250 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 6550 2250 6850
+Wire Wire Line
+	2250 7450 2250 7300
+Wire Wire Line
+	2500 6850 2250 6850
+Connection ~ 2250 6850
+Wire Wire Line
+	2250 6850 2250 7000
+$Comp
+L power:+12V #PWR014
+U 1 1 63A92D4A
+P 2250 6550
+F 0 "#PWR014" H 2250 6400 50  0001 C CNN
+F 1 "+12V" H 2265 6723 50  0000 C CNN
+F 2 "" H 2250 6550 50  0001 C CNN
+F 3 "" H 2250 6550 50  0001 C CNN
+	1    2250 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 63A92D54
+P 2250 7150
+F 0 "C6" H 2365 7196 50  0000 L CNN
+F 1 "0.47u" H 2365 7105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2288 7000 50  0001 C CNN
+F 3 "~" H 2250 7150 50  0001 C CNN
+	1    2250 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 63A98F44
+P 3300 7150
+F 0 "C7" H 3415 7196 50  0000 L CNN
+F 1 "0.1u" H 3415 7105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3338 7000 50  0001 C CNN
+F 3 "~" H 3300 7150 50  0001 C CNN
+	1    3300 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR020
+U 1 1 63A98F4E
+P 3300 7450
+F 0 "#PWR020" H 3300 7200 50  0001 C CNN
+F 1 "GND" H 3305 7277 50  0001 C CNN
+F 2 "" H 3300 7450 50  0001 C CNN
+F 3 "" H 3300 7450 50  0001 C CNN
+	1    3300 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 7450 3300 7300
+Wire Wire Line
+	3300 7000 3300 6850
+Wire Wire Line
+	3100 6850 3300 6850
+Connection ~ 3300 6850
+$Comp
+L power:GND #PWR019
+U 1 1 63A9E66F
+P 2800 7450
+F 0 "#PWR019" H 2800 7200 50  0001 C CNN
+F 1 "GND" H 2805 7277 50  0001 C CNN
+F 2 "" H 2800 7450 50  0001 C CNN
+F 3 "" H 2800 7450 50  0001 C CNN
+	1    2800 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 7450 2800 7150
+Text GLabel 3450 6500 2    50   Output ~ 0
+5V_DIGITAL
+Wire Wire Line
+	3450 6500 3300 6500
+Wire Wire Line
+	3300 6500 3300 6850
+Text Notes 5550 6800 0    50   ~ 0
+Using separate voltage regulators\nfor digital and analog parts of the\ncircuit prevents the noice when\nupdating text on the LCD, etc.
+Text GLabel 8750 4900 2    50   Input ~ 0
+5V_DIGITAL
+Wire Wire Line
+	8750 4900 8600 4900
+Text GLabel 8750 5100 2    50   BiDi ~ 0
+I2C_SDA
+Text GLabel 8750 5200 2    50   BiDi ~ 0
+I2C_SCL
+Wire Wire Line
+	8600 5100 8750 5100
+Wire Wire Line
+	8750 5200 8600 5200
 $EndSCHEMATC
