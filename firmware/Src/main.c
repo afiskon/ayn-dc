@@ -101,7 +101,7 @@ static void MX_I2C2_Init(void);
 #define CH_VFO  2
 
 const int32_t CW_PITCH = 700;
-const int32_t si5351_correction = 5261;
+const int32_t si5351_correction = 5188;
 
 /* Adjust for used rotary encoders */
 #define MAIN_DELTA_DIV    1
