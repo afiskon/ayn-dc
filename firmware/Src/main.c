@@ -411,13 +411,9 @@ void changeFrequency(int32_t delta, bool force) {
     } else {
         // There can be a few spurious signals in this rig.
         // They can be masked like this if necessary:
-
-        /*
-        if((bands[currentBand].lastFreq == 18069400) ||
-           (bands[currentBand].lastFreq == 18092100)) {
+        if(bands[currentBand].lastFreq == 10127800) {
             Fvfo += 50;
         }
-        */
     }
 
     Fvfo *= 4;
