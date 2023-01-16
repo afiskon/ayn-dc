@@ -13,3 +13,8 @@ QRP CW Transceiver
 * Has a VCC indicator and a SWR meter
 * PCB is designed to fit into Hammond 1590BB enclosure
 * The project is 100% open-source
+
+Links:
+
+* Article (in Russian): https://eax.me/ayn-dc-transceiver/
+* Demo: https://www.youtube.com/watch?v=9x_RN68QJhk
