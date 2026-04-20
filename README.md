@@ -16,5 +16,5 @@ QRP CW Transceiver
 
 Links:
 
-* Article (in Russian): https://eax.me/ayn-dc-transceiver/
+* Article (in Russian): https://eax.me/2023/2023-01-16-ayn-dc-transceiver.html
 * Demo: https://www.youtube.com/watch?v=9x_RN68QJhk
